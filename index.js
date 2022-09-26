@@ -31,8 +31,8 @@ async function passwordMatch(pass){
  })
  app.post("/inpiration",async function(req,res){
     let values = req.body
-   //let result =await client.db("chart").collection("data").insertOne({values});
-    //res.send(result)
+   let result =await client.db("chart").collection("data").insertOne({values});
+   res.send(result)
    
  })
 
